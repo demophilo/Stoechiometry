@@ -1,0 +1,290 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass tufte-book
+\begin_preamble
+\usepackage [version=3] {mhchem}
+\mhchemoptions{font=sf}
+\usepackage [notextcomp,oldstylenums] {kpfonts}
+\setcounter{secnumdepth}{1}
+\usepackage{caption}
+\usepackage{mcaption}
+\newcommand{\xyR}[1]{%
+\xydef@\xymatrixrowsep@{#1}}
+\newcommand{\xyC}[1]{%
+\xydef@\xymatrixcolsep@{#1}}
+\DeclareCaptionLabelSeparator{colonenskip}{:\enskip{}}
+\captionsetup{figurename=Abb.,tablename=Tab.,font={footnotesize,sf},justification=RaggedRight,labelfont=bf,singlelinecheck=false,labelsep=colonenskip}
+\title{Chemie verstehen -- Band I}
+\author{Karl Linek}
+\sloppy
+\usepackage{microtype}
+\end_preamble
+\options justified,nofonts,sfsidenotes,a4paper,symmetric,notoc,marginals=raggedright
+\use_default_options true
+\maintain_unincluded_children false
+\language naustrian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language german
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter*
+Das Einmaleins der Chemie
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+captionsetup{figurename=Abb.,tablename=Tab.,font={footnotesize,sf},justification=R
+aggedRight,labelfont=bf,singlelinecheck=false,labelsep=colonenskip}
+\end_layout
+
+\end_inset
+
+Mit der Erkenntnis des atomistischen Aufbaus der Materie ist es auch möglich
+ geworden, einfache aber grundlegend wichtige Berechnungen in der Chemie
+ durchzuführen.
+ Obwohl viele Leute meinen, dies nicht fertig zu bringen, ist es ebenso
+ leicht zu beherrschen wie das Einmaleins in der Volksschule.
+ Ja, es ist eigentlich nichts anderes als ein Abzählen kombiniert mit ein
+ paar einfachen Prinzipien.
+ Daher kommt man mit den vier Grundrechnungsarten aus.
+\end_layout
+
+\begin_layout Standard
+Das chemische Rechnen wird Stöchiometrie genannt, abgeleitet von <griech.>
+ stoicheion Grundstoff und metron Maß.
+ Die Stöchiometrie leitet sich aus drei Gesetzen ab:
+\end_layout
+
+\begin_layout Description
+Gesetz
+\begin_inset space ~
+\end_inset
+
+von
+\begin_inset space ~
+\end_inset
+
+der
+\begin_inset space ~
+\end_inset
+
+Erhaltung
+\begin_inset space ~
+\end_inset
+
+der
+\begin_inset space ~
+\end_inset
+
+Masse: Die Masse der Materie ist unveränderlich.
+ Materie kann weder erschaffen noch vernichtet werden.
+\end_layout
+
+\begin_layout Description
+Gesetz
+\begin_inset space ~
+\end_inset
+
+von
+\begin_inset space ~
+\end_inset
+
+der
+\begin_inset space ~
+\end_inset
+
+Unveränderlichkeit
+\begin_inset space ~
+\end_inset
+
+der
+\begin_inset space ~
+\end_inset
+
+Elemente: Ein Element kann bei chemischen Reaktionen in kein anderes Element
+ umgewandelt werden.
+\end_layout
+
+\begin_layout Description
+Gesetz
+\begin_inset space ~
+\end_inset
+
+der
+\begin_inset space ~
+\end_inset
+
+konstanten
+\begin_inset space ~
+\end_inset
+
+Proportionen: Eine chemische Verbindung hat eine konstante Zusammensetzung.
+\end_layout
+
+\begin_layout Standard
+Die ersten beiden Gesetze sind eine Absage an die Alchemie und die Phlogistonthe
+orie.
+ Es ist bemerkenswert, dass die Newtonsche Mechanik als Grenzfall in der
+ Relativitätstheorie und der Quantenmechnik weiter ihre Berechtigung hat.
+ Die Alchemie und die Phlogistontheorie jedoch wurden jedoch zur Gänze verworfen.
+ Das dritte Gesetz repräsentiert die Atomtheorie.
+ 
+\end_layout
+
+\begin_layout Standard
+Während die ersten zwei Gesetze einleuchtend und leicht verständlich sind,
+ ist das Gesetz der konstanten Proportionen wie eine russische Puppe.
+ Ihn diesem Gesetz verbergen sich weitere vier Prämissen:
+\end_layout
+
+\begin_layout Enumerate
+Die Materie besteht aus unteilbaren Einheiten.
+ Sie werden Atome genannt.
+\end_layout
+
+\begin_layout Enumerate
+Die Atome eines Elements haben alle die gleiche Masse.
+\end_layout
+
+\begin_layout Enumerate
+Ein Molekül ist ein Zusammenschluss von Atomen.
+\end_layout
+
+\begin_layout Enumerate
+Eine chemische Verbindung besteht aus einer Sorte von Molekülen.
+\end_layout
+
+\begin_layout Standard
+Nun war es zunächst notwendig, die Masse eines Atoms eines Element in Relation
+ zu einem Atom eines anderen Elements zu bestimmen.
+ Bald fand man heraus, dass Wasserstoff das leichteste Element ist und dass
+ fast alle Elemente um ein ganzzahliges Vielfaches schwerer als Wasserstoff
+ sind.
+ Kohlenstoff ist z.
+\begin_inset space \thinspace{}
+\end_inset
+
+B.
+ zwölf Mal schwerer als Wasserstoff, Sauerstoff 16 Mal schwerer und Stickstoff
+ 14 mal schwerer.
+ Nun konnte man aus der Analyse eines Stoffes schließen, wie er zusammengesetzt
+ ist.
+\end_layout
+
+\begin_layout Standard
+Eine Beispiel: Die Analyse ergibt, dass Wasser zu 11,1
+\begin_inset space \thinspace{}
+\end_inset
+
+% aus Wasserstoff 
+\begin_inset Formula $\ce{H}$
+\end_inset
+
+ und zu 88,9
+\begin_inset space \thinspace{}
+\end_inset
+
+% aus Sauerstoff 
+\begin_inset Formula $\ce{O}$
+\end_inset
+
+ besteht.
+ Ein Sauerstoffatom ist 16 Mal schwerer als ein Wasserstoffatom.
+ Wasser muss also aus zwei Atomen Wasserstoff und einem Atom Sauerstoff
+ bestehen.
+\end_layout
+
+\begin_layout Standard
+Als nun die Verbindungen analysiert waren, hatte man die Daten um Umsätze
+ zu berechnen.
+\end_layout
+
+\begin_layout Standard
+Wieder ein Beispiel: Wenn man Wasserstoff mit Sauerstoff reagieren lässt,
+ entsteht Wasser.
+ Die Reaktionsgleichung lautet somit: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ce{H2 +O2 -> H2O}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Doch es kann nicht sein, das ein Molekül Sauerstoff mit einem Molekül Wassrstoff
+ reagiert.
+ Wo ist das zweite Sauerstoffatom geblieben? Es müssen also zwei Wasserstoffmole
+küle mit einem Sauerstoffmoleküle regieren.
+ Dann entstehen auch zwei Wassermoleküle.
+ Die richtige Reaktionsgleichung lautet also:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ce{2H2 + O2 -> 2H2O}$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,1607 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass book
+\begin_preamble
+\mhchemoptions{font=sf}
+\usepackage [notextcomp,oldstylenums] {kpfonts}
+\setcounter{secnumdepth}{1}
+\usepackage{caption}
+\usepackage{mcaption}
+\newcommand{\xyR}[1]{%
+\xydef@\xymatrixrowsep@{#1}}
+\newcommand{\xyC}[1]{%
+\xydef@\xymatrixcolsep@{#1}}
+\DeclareCaptionLabelSeparator{colonenskip}{:\enskip{}}
+\captionsetup [figure] {name=Abb.,font={sf,footnotesize},labelfont=bf,labelsep=colonenskip,singlelinecheck=false,justification=RaggedRight }
+\captionsetup [table] {name=Tab.,font={sf,small},labelfont=bf,labelsep=colonenskip,singlelinecheck=false,justification=RaggedRight}
+\title{Chemie verstehen -- Band I}
+\author{Karl Linek}
+\sloppy
+\usepackage{microtype}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language naustrian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\branch Lösungen
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language german
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Das Kleine 
+\begin_inset Formula $1\times1$
+\end_inset
+
+ der Chemie
+\end_layout
+
+\begin_layout Standard
+Die Stöchiometrie ist die die Lehre von den chemischen Berechnungen.
+ Die gesamte Stöchiometrie lässt sich auf drei Grundgesetze zurückführen:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Gesetz von der Massenerhaltung
+\series default
+: Bei chemischen Reaktionen ändert sich die Gesamtmasse nicht.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Gesetz von der Unveränderlichkeit der Elemente
+\series default
+: Elemente wandeln sich bei chemischen Reaktionen nicht in andere Elemente
+ um.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Gesetz von den Grundbausteinen
+\series default
+: Die Materie besteht aus kleinsten, unteilbaren Teilchen, den Atomen.
+\end_layout
+
+\begin_layout Standard
+Diese drei Erkenntnisse legen den Grundstein zur Chemie.
+ Mit diesen Grundgesetzen lassen sich Umsätze bei chemischen Reaktionen
+ berechnen.
+\end_layout
+
+\begin_layout Section
+Moleküle zählen
+\end_layout
+
+\begin_layout Standard
+Alle Atome eines Isotops haben dieselbe Masse.
+ Das ist unabhängig, in welcher Verbindung dieses Atom ist.
+ Ein Wasserstoffatom 
+\begin_inset Formula $\ce{^{1}H}$
+\end_inset
+
+ in 
+\begin_inset Formula $\ce{H2O}$
+\end_inset
+
+ ist ebenso schwer, wie ein Wasserstoffatom 
+\begin_inset Formula $\ce{^{1}H}$
+\end_inset
+
+ in 
+\begin_inset Formula $\ce{H2SO4}$
+\end_inset
+
+.
+ Wenn Elemente mehrere stabile Isotope aufweisen, ist der Prozentsatz dieser
+ Isotope auf der gesamten Erde gleich, sodass man von einer durchschnittlichen
+ Masse für das Atom eines Elements ausgehen kann.
+\end_layout
+
+\begin_layout Standard
+Beispiel: Sauerstoff hat drei stabile Isotope: 99,762
+\begin_inset space \thinspace{}
+\end_inset
+
+% aller Sauerstoffatome bestehen aus dem Isotop 
+\begin_inset Formula $\ce{^{16}O}$
+\end_inset
+
+.
+ Es hat acht Protonen und acht Neutronen.
+ 0,038
+\begin_inset space \thinspace{}
+\end_inset
+
+% bestehen aus 
+\begin_inset Formula $\ce{^{17}O}$
+\end_inset
+
+.
+ 0,2
+\begin_inset space \thinspace{}
+\end_inset
+
+% bestehen aus 
+\begin_inset Formula $\ce{^{18}O}$
+\end_inset
+
+.
+ Diese Prozentsätze variieren nur sehr geringfügig auf der gesamten Erde.
+ Man kann daher von einer mittleren Atommasse ausgehen, welche auf der gesamten
+ Erde gleich ist.
+\end_layout
+
+\begin_layout Standard
+Damit sind nicht nur die Atome eines Elements gleich schwer, sondern auch
+ alle Moleküle eines Reinstoffs sind gleich schwer.
+ Alle 
+\begin_inset Formula $\ce{H2O}$
+\end_inset
+
+-Molekül sind gleich schwer.
+ Daraus folgt wiederum, dass man auch die Masse von 10
+\begin_inset space \thinspace{}
+\end_inset
+
+000, 1
+\begin_inset space \thinspace{}
+\end_inset
+
+000
+\begin_inset space \thinspace{}
+\end_inset
+
+000 oder einer anderen beliebigen Stückzahl eines Moleküls berechnen kann.
+ Dazu multipliziert man die Masse eines einzelnen Moleküls mit der Anzahl
+ der Moleküle.
+ Diese Rechnung kann man umkehren.
+ Aus der Masse einer Portion eines Reinstoffs kann man durch Division mit
+ der Masse eines einzelnen Moleküls die Anzahl der Moleküle in dieser Portion
+ berechnen.
+ Aus Wägen wird Zählen.
+\end_layout
+
+\begin_layout Standard
+Diese Methode ermöglicht es erst, Umsätze zu berechnen:
+\end_layout
+
+\begin_layout Section
+Das atomare Urkilogramm
+\end_layout
+
+\begin_layout Standard
+Die Massen der Atome werden auf die Masse des Kohlenstoffisotops 
+\begin_inset Formula $\ce{^{12}C}$
+\end_inset
+
+ (lies C 12) bezogen.
+ Diese Masse wird durch 12 dividiert, sodass die Einheit ungefähr die Masse
+ eines Nukleons hat:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\unit[1]{u}=\frac{m\left(\ce{^{12}C}\right)}{12}
+\]
+
+\end_inset
+
+ Die Atommasse in 
+\begin_inset Formula $\unit{u}$
+\end_inset
+
+ nennt man relative Atommasse 
+\begin_inset Formula $M_{r}$
+\end_inset
+
+, da sie in Relation zur Masse des 
+\begin_inset Formula $\ce{^{12}C}$
+\end_inset
+
+-Isotops definiert ist.
+ Die relativen Atommassen aller Elemente wurden gemessen und sind in fast
+ jedem Periodensystem zu finden.
+ 1
+\begin_inset space \thinspace{}
+\end_inset
+
+u ist quasi das atomare Pendant zum Urkilogramm.
+ Alle Wägungen auf makroskopischer Ebene sind auf das Urkilogramm bezogen
+ und alle Wägungen auf atomarer Ebene sind auf 1
+\begin_inset space \thinspace{}
+\end_inset
+
+u bezogen.
+\end_layout
+
+\begin_layout Section
+Die Zähleinheit Mol
+\end_layout
+
+\begin_layout Standard
+Man kann diese beiden Masseneinheiten ineinander umrechnen: 
+\begin_inset Formula $\unit[1]{u}=\unit[1,66\times10^{-24}]{g}$
+\end_inset
+
+.
+ Berechnet man aus diesen Daten die Anzahl der Moleküle eines Stoffes, der
+ eine Masse im Bereich von einigen wenigen Gramm hat, ergibt sich eine sehr
+ hohe Zahl von ca.
+ 
+\begin_inset Formula $10^{22}$
+\end_inset
+
+ bis 
+\begin_inset Formula $10^{23}$
+\end_inset
+
+ Molekülen.
+\end_layout
+
+\begin_layout Standard
+Um nicht ständig von der relativen Atommasse auf die Masse eines Mols umrechnen
+ zu müssen, hat man das Mol so definiert, dass man sich dieses Rechnen ersparen
+ kann, um von der relativen Atommasse auf die Masse eines Mols zu kommen.
+ Man muss nur die Einheit 
+\begin_inset Formula $\unit{u}$
+\end_inset
+
+ streichen und gegen die Einheit 
+\begin_inset Formula $\unit{g}$
+\end_inset
+
+ ersetzen, um aus der relativen Atommasse 
+\begin_inset Formula $M_{r}$
+\end_inset
+
+ die molare Masse 
+\begin_inset Formula $M$
+\end_inset
+
+ zu erhalten.
+\end_layout
+
+\begin_layout Standard
+Das Mol ist daher eine Zähleinheit.
+ Zähleinheiten werden geschaffen, um sich das Leben zu erleichtern.
+ Eine bekannte Zähleinheit ist das Dutzend.
+ Das Dutzend wurde erfunden, weil es leichter ist, es durch kleine Zahlen
+ zu dividieren.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 1
+use_makebox 0
+width "98.5col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+Definition: Ein Mol eines Stoffes ist jene Anzahl von Atomen, Molekülen
+ oder Formeleinheiten, die man braucht, um allein durch den Austausch der
+ Einheit u und g aus der relativen Atommasse die Masse eines Mols in 
+\begin_inset Formula $\unit{g}$
+\end_inset
+
+ zu erhalten.
+ Dieser Anzahl entspricht der Avogadrokonstante: 
+\begin_inset Formula $N_{A}=\unitfrac[6,022\times10^{23}]{1}{mol}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In jedem Mol stecken daher genau diese Anzahl einzelner Teilchen (Atome,
+ Moleküle oder Formeleinheiten.
+ Die Masse eines Mol eines Reinstoffes wird molare Masse genannt.
+ 
+\end_layout
+
+\begin_layout Standard
+Die Formel für die Umrechnung der relativen Atommasse 
+\begin_inset Formula $M_{r}$
+\end_inset
+
+ in die molare Masse 
+\begin_inset Formula $M$
+\end_inset
+
+ lautet wie folgt: 
+\begin_inset Formula $x_{M_{r}}\cdot N_{a}=x_{M}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Wenn also ein Die Zahlen von 
+\begin_inset Formula $x_{M_{r}}$
+\end_inset
+
+ und 
+\begin_inset Formula $x_{M}$
+\end_inset
+
+ sind gleich, aber die Einheiten sind unterschiedlich.
+ Beispiel: Die relative Atommasse 
+\begin_inset Formula $M_{r}$
+\end_inset
+
+ von Sauerstoff ist 
+\begin_inset Formula $\unit[16]{u}$
+\end_inset
+
+.
+ Rechnung für 
+\begin_inset Formula $x=1$
+\end_inset
+
+: 
+\begin_inset Formula $\unit[16]{u}\cdot N_{A}=16\times1,66\times10^{-24}\,\unit{g}\times\unitfrac[6,022\times10^{23}]{1}{mol}=\unitfrac[15,99]{g}{mol}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 1
+use_makebox 0
+width "98.5col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+Die genauen Zahlen sind
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $N_{A}=\unitfrac[6,02214129\times10^{23}]{1}{mol}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $u=\unit[1,660538921\times10^{-24}]{g}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dieses Ergebnis sollte 
+\begin_inset Formula $\unitfrac[16]{g}{mol}$
+\end_inset
+
+ sein, aber die Konstanten sind gerundet und daher ist auch das Ergebnis
+ ungenau.
+ Die genaue Rechnung zeigt, dass ein Mol Sauerstoff genau 
+\begin_inset Formula $\unit[16]{g}$
+\end_inset
+
+ wiegt.
+ Obwohl eine Multiplikation mit einer sehr hohen Zahl durchgeführt wurde,
+ ist die dieselbe Rechnung durch den Austausch der Einheiten erledigt.
+ 
+\end_layout
+
+\begin_layout Standard
+Bei all dieser Rechnerei darf nicht vergessen werden: Das Mol ist eine Zähleinhe
+it so ähnlich wie ein Dutzend.
+ Das was gezählt wird, nennt man die Stoffmenge 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Stoffmenge und Anzahl der Moleküle ist also das Gleiche.
+ Mathematisch schaut das dann so aus:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+n=\frac{m}{M}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Die Stoffmenge ist die Masse eines Reinstoffes dividiert durch dessen molare
+ Masse.
+\end_layout
+
+\begin_layout Subsection*
+Beispiele:
+\end_layout
+
+\begin_layout Standard
+Berechne die molare Masse von 
+\begin_inset Formula $\ce{Ca(OH)2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Aus dem Periodensystem der Elemente kann man die molaren Massen der Elemente
+ ablesen:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M(\ce{Ca})=\unitfrac[40,1]{g}{mol}$
+\end_inset
+
+, 
+\begin_inset Formula $M(\ce{O})=\unitfrac[16,0]{g}{mol}$
+\end_inset
+
+, 
+\begin_inset Formula $M(\ce{H})=\unitfrac[1,0]{g}{mol}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Damit ist
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M(\ce{Ca(OH)2})=M(\ce{Ca})+2\cdot(M(\ce{O})+M(\ce{H})=$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align right
+\begin_inset Formula $=\unitfrac[40,1]{g}{mol}+2\cdot(\unitfrac[16,0]{g}{mol}+\unitfrac[1,0]{g}{mol})=\unitfrac[74,1]{g}{mol}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align left
+Berechne die Stoffmenge von 
+\begin_inset Formula $\unit[400]{g}$
+\end_inset
+
+ 
+\begin_inset Formula $\ce{Ca(OH)2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n(\ce{Ca(OH)2})=\frac{m(\ce{Ca(OH)2})}{M(\ce{Ca(OH)2})}=\frac{\unit[400]{g}}{\unit[74,1]{\frac{g}{mol}}}=\unit[5,4]{mol}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Aufgaben:
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Aufgabe 1
+\series default
+: Berechne die molaren Massen von
+\end_layout
+
+\begin_layout Standard
+a) 
+\begin_inset Formula $\ce{H2SO4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+b) 
+\begin_inset Formula $\ce{Sr(OH)2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+c) 
+\begin_inset Formula $\ce{Ca3(PO4)2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+d) 
+\begin_inset Formula $\ce{(NH3)2SO4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e)
+\begin_inset Formula $\ce{K3[Fe(CN)6]}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch Lösungen
+status collapsed
+
+\begin_layout Standard
+a)
+\begin_inset Formula $M(\ce{H2SO4})=\unitfrac[98,1]{g}{mol}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+b) 
+\begin_inset Formula $M(\ce{Sr(OH)2})=\unitfrac[121,6]{g}{mol}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+c) 
+\begin_inset Formula $M(\ce{Ca3(PO4)2})=\unitfrac[310,3]{g}{mol}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+d) 
+\begin_inset Formula $M(\ce{(NH3)2SO4})=\unitfrac[130,1]{g}{mol}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+e) 
+\begin_inset Formula $M(\ce{K3[Fe(CN)6]})=250\unitfrac[,1]{g}{mol}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\series bold
+Aufgabe 2
+\series default
+: Berechne die Stoffmenge der Stoffe von Aufgabe 1 für 500
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset Formula $\unit{g}$
+\end_inset
+
+ des jeweiligen Stoffes.
+\begin_inset Branch Lösungen
+status collapsed
+
+\begin_layout Standard
+\noindent
+a) 
+\begin_inset Formula $n(\ce{H2SO4})=\unit[5,10]{mol}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+b) 
+\begin_inset Formula $n(\ce{Sr(OH)2})=\unit[4,11]{mol}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+c) 
+\begin_inset Formula $n(\ce{Ca3(PO4)2})=\unit[1,61]{mol}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+d) 
+\begin_inset Formula $n(\ce{(NH3)2SO4})=\unit[3,84]{mol}$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+e) 
+\begin_inset Formula $n(\ce{K3[Fe(CN)6]})=\unit[2,00]{mol}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Reaktionsgleichung und stöchiometrische Koeffizienten
+\end_layout
+
+\begin_layout Standard
+Es stellt sich die Frage, warum in der Chemie um die Anzahl von Molekülen
+ ein solches Aufheben gemacht wird.
+ Dazu muss man sich den wichtigen mathematischen Satz, dass man Birnen mit
+ Äpfeln nicht vergleichen kann, vergegenwärtigen.
+ Er bedeutet, dass die Eigenschaften von verschiedenartigen Gegenständen
+ eben genau das sind: verschieden und damit nicht vergleichbar.
+ Aber, egal wie verschieden die Eigenschaften sind, die Anzahl lässt sich
+ immer vergleichen.
+ So lassen sich auch die Anzahl der Moleküle, die bei einer Reaktion beteiligt
+ sind, vergleichen.
+ 
+\end_layout
+
+\begin_layout Standard
+Bei Reaktionen reagieren immer Moleküle mit einer genau festgelegten Anzahl
+ der Moleküle miteinander:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ce{CH4 + 2O2 <=> CO2 + 2H2O}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ce{3Fe3O4 + Al -> 9Fe + 4Al2O3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ce{CaCO3 + 2HNO3 <=>> Ca(NO3)2 + H2O + CO2 ^{\,}}$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+Der stöchiometrische Koeffizient gibt an, wie viele Moleküle an einer Reaktion
+ beteiligt sind.
+ Auf diese Weise ergibt sich ein Weg der Berechnung der Massen bei einer
+ chemischen Reaktion.
+ Denn mit Hilfe der molaren Masse eines Stoffes, kann man die Stoffmenge
+ aus der Masse berechnen.
+ Aus der Stoffmenge eines Stoffes kann man mit Hilfe der stöchiometrischen
+ Koeffizienten einer Reaktionsgleichung die Stoffmenge jedes anderen Stoffes
+ der Reaktion berechnen.
+ Und aus diesen Stoffmengen kann man die dazugehörigen Massen der anderen
+ Stoffe berechnen.
+ Eine direkte Umrechnung gibt es nicht.
+\end_layout
+
+\begin_layout Standard
+Nur durch den Vergleich der Anzahl der Moleküle lassen sich die Umsätze
+ bei chemischen Reaktionen berechnen.
+ Dies macht die Stoffmenge zur wichtigsten Größe und das Mol zur wichtigsten
+ Einheit der Chemie.
+\end_layout
+
+\begin_layout Standard
+Man kann sich das Verhältnis der Moleküle aus der Reaktionsgleichung ableiten.
+ Wenn man von der allgemeinen Reaktionsgleichung
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ce{\alpha\cdot A + \beta\cdot B <=> \gamma\cdot C + \delta\cdot D}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ausgeht, wobei 
+\begin_inset Formula $\ce{A}$
+\end_inset
+
+, 
+\begin_inset Formula $\ce{B}$
+\end_inset
+
+, 
+\begin_inset Formula $\ce{C}$
+\end_inset
+
+, 
+\begin_inset Formula $\ce{D}$
+\end_inset
+
+, etc.
+ die Moleküle und 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, 
+\begin_inset Formula $\beta$
+\end_inset
+
+, 
+\begin_inset Formula $\gamma$
+\end_inset
+
+, 
+\begin_inset Formula $\delta$
+\end_inset
+
+, etc.
+ die Stöchiometrischen Koeffizienten sind, dann gilt:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{n(\ce{A})}{\alpha}=\frac{n(\ce{B})}{\beta}=\frac{n(\ce{C})}{\gamma}=\frac{n(\ce{D})}{\delta}=\cdots$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Damit ist der Weg der Berechnung der Masse eines Stoffes aus der Masse eines
+ anderen Stoffes einer Reaktion fertig: Von der Masse des Stoffes A zur
+ Stoffmenge von A:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n=\frac{m(\ce{A})}{M(\ce{A})}$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+Von der Stoffmenge A zur Stoffmenge B:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{n(\ce{A})}{\alpha}=\frac{n(\ce{B})}{\beta}$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+Und schließlich von der Stoffmenge B auf die Masse B:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $m(\ce{B})=n(\ce{B})\cdot M(\ce{B})$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Dieser Weg ist allgemein zugänglich und nicht nur für die Stoffe A und B
+ beschränkt.
+\end_layout
+
+\begin_layout Subsection*
+Beispiel:
+\end_layout
+
+\begin_layout Standard
+Eine Rakete nimmt 30 kg des Raketentreibstoffs Hydrazin 
+\begin_inset Formula $\ce{N2H2}$
+\end_inset
+
+mit.
+ Dazu muss auch der Sauerstoff 
+\begin_inset Formula $\ce{O2}$
+\end_inset
+
+ mitgenommen werden.
+ Wie viel Sauerstoff braucht man? Die zugehörige Reaktionsgleichung lautet:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ce{2N2H2 + 5O2 -> 4NO2 + 2H2O}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Lösung: Zuerst werden mit Hilfe des Periodensystems die molaren Massen von
+ Hydrazin und Sauerstoff berechnet (siehe ).
+ 
+\begin_inset Formula $M(\ce{N2H2})=\unitfrac[30]{g}{mol}$
+\end_inset
+
+, 
+\begin_inset Formula $M(\ce{O2})=\unitfrac[32]{g}{mol}$
+\end_inset
+
+.
+ Dann wird die Stoffmenge des Hydrazins berechnet:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n(\ce{N2H2})=\frac{m(\ce{N2H2})}{M(\ce{N2H2})}=\frac{\unit[30\,000]{g}}{\unitfrac[30]{g}{mol}}=\unit[1000]{mol}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Nun wird die Stoffmenge des Sauerstoffs aus der Stoffmenge des Hydrazins
+ berechnet:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{n(\ce{O2})}{5}=\frac{n(\ce{N2H2})}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n(\ce{O2})=\frac{5\cdot n(\ce{N2H2})}{2}=\frac{5\cdot\unit[1000]{mol}}{2}=\unit[2500]{mol}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Die Umkehraufgabe zur Stoffmengenberechnung stellt die Massenberechnung
+ dar:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $m(\ce{O2})=n(\ce{O2})\cdot M(\ce{O2})=\unit[2500]{mol}\cdot\unitfrac[32]{g}{mol}=\unit[80\,000]{g}=\unit[80]{kg}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Umsätze bei Gasreaktionen
+\end_layout
+
+\begin_layout Standard
+Treten in einer chemischen Reaktion Gase auf, dann ist es oft wichtiger
+ das Volumen des Gases zu wissen.
+ Für die meisten Gase ist es ausreichend sie als 
+\begin_inset Quotes pld
+\end_inset
+
+ideal
+\begin_inset Quotes prd
+\end_inset
+
+ zu betrachten.
+ Zum Unterschied zu realen Gasen werden die Teilchen idealer Gase als punktförmi
+g aufgefasst und die geringen Kräfte zwischen den Molekülen werden vernachlässig
+t.
+ Dadurch ergibt sich folgende allgemeine Gasgleichung:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p$
+\end_inset
+
+\SpecialChar \ldots{}
+Druck in Pascal
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V$
+\end_inset
+
+\SpecialChar \ldots{}
+Volumen in 
+\begin_inset Formula $\unit{m}^{3}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p\cdot V=n\cdot R\cdot T$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $n$
+\end_inset
+
+\SpecialChar \ldots{}
+Stoffmenge in mol
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R=\unitfrac[8,314]{J}{mol\cdot K}$
+\end_inset
+
+\SpecialChar \ldots{}
+allgemeine Gaskonstante
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $T$
+\end_inset
+
+\SpecialChar \ldots{}
+absolute Temperatur in 
+\begin_inset Formula $\unit{K}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Druck und Temperatur kann man leicht messen, sodass aus der Kenntnis der
+ Stoffmenge das Volumen und umgekehrt aus bekanntem Volumen die Stoffmenge
+ berechnet werden kann.
+ Auch hier ist die Stoffmenge die zentrale Größe für die Umsatzberechnung.
+\end_layout
+
+\begin_layout Standard
+Der Weg der Umsatzberechnung bei Gasreaktionen: Zunächst muss man vom Gasvolumen
+ mittels der allgemeinen Gasgleichung auf die Ebene der Stoffmenge umrechnen.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n_{A}=\frac{p\cdot V}{R\cdot T}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Dann kann man wieder die Stoffmenge des einen Stoffes in die Stoffmenge
+ des anderen Stoffes umrechnen.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{n(\ce{A})}{\alpha}=\frac{n(\ce{B})}{\beta}$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+Wieder in Umkehrung des ersten Schrittes kann man dann das Volumen des Stoffes
+ B ausrechnen.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V=\frac{n\cdot R\cdot T}{p}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Aber es ist eher selten, dass alle Stoffe einer Reaktion Gase sind.
+ Das macht jedoch nichts, da es egal ist, ob man die Stoffmenge aus den
+ Massen oder d Gasvolumina berechnet.
+ Und es ist auch egal, ob man aus den Stoffmengen Massen oder Gasvolumina
+ berechnet.
+ Der Weg die Umsätze bei chemischen Reaktionen zu berechnen führt auf jeden
+ Fall über die Stoffmengen.
+\end_layout
+
+\begin_layout Subsection*
+Beispiel:
+\end_layout
+
+\begin_layout Standard
+Natrium reagiert mit Wasser zu Natriumhydroxid und Wasserstoff.
+ Wie viel Wasserstoffgas entsteht aus 
+\begin_inset Formula $\unit[1]{g}$
+\end_inset
+
+ Natrium bei 
+\begin_inset Formula $\unit[25]{°C}$
+\end_inset
+
+ und 
+\begin_inset Formula $\unit[1]{atm}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ce{2Na + 2H2O -> 2NaOH + H2 ^{\,}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Lösung: Zunächst werden die Druck- und Temperatureinheiten in die SI-Einheiten
+ umgerechnet:
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T=\unit[25]{°C}+273,15=\unit[298,15]{K}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p=\unit[1]{atm}\cdot101300=\unit[101300]{Pa}$
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Dann werden die molaren Massen ermittelt:
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M(\ce{Na})=\unitfrac[23]{g}{mol}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M(\ce{H2})=2\cdot M(\ce{H})=\unitfrac[2]{g}{mol}$
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Damit sind alle Größen bekannt um den Umsatz ohne Zwischenrechnung zu berechnen:
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n(\ce{Na})=\frac{\unit[1]{g}}{\unit[23]{\frac{g}{mol}}}=\unit[0,04348]{mol}$
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Nun die Standardumrechnung der Stoffmengen:
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{n(\ce{H2})}{1}=\frac{n(\ce{Na})}{2}=\frac{\unit[0,04348]{mol}}{2}=\unit[0,02174]{mol}$
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Jetzt kommt die Umrechnung in das Volumen:
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "120col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset Formula $V(\ce{H2})=\frac{n(\ce{H2})\cdot R\cdot T}{p}=\frac{\unit[0,02174]{mol\cdot\unit[8,314]{\frac{J}{mol\cdot K}\cdot\unit[298,15]{K}}}}{\unit[101300]{Pa}}=\unit[0,0005320]{m^{3}}=\unit[532,0]{cm^{3}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Aufgaben:
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+Lösungen:
+\begin_inset Newline newline
+\end_inset
+
+1.
+ 
+\begin_inset Formula $m(\ce{BaCl2})=\unit[446,2]{g}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+2.
+ 
+\begin_inset Formula $m(\ce{Fe3O4})=\unit[1\,036,5]{g}$
+\end_inset
+
+, 
+\begin_inset Formula $m(\ce{Al})=\unit[322,3]{g}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+3.
+ 
+\begin_inset Formula $m(\ce{CO2})=\unit[2,16]{kg}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+4.
+ 
+\begin_inset Formula $V(\ce{H2})=\unit[124,4]{l}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+5.
+ 
+\begin_inset Newline newline
+\end_inset
+
+6.
+ 
+\begin_inset Formula $m(\ce{H2O2})=\unit[19,02]{mg}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Im Labor will man 500 g Bariumsulfat herstellen.
+ Wie viel Bariumchlorid braucht man dazu?
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\ce{BaCl2 + H2SO4 <=>> BaSO4 v +2HCl}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Zum Schweißen mit Termit werden 
+\begin_inset Formula $\unit[750]{g}$
+\end_inset
+
+ Eisen benötigt.
+ Wie viel Eisenerz muss eingesetzt werden und wie viel Aluminium?
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\ce{3Fe3O4 + Al -> 9Fe + 4Al2O3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Ein Liter Benzin wird verbrannt.
+ Wie viele 
+\begin_inset Formula $\unit{kg}$
+\end_inset
+
+ Kohlenstoffdioxid 
+\begin_inset Formula $\ce{O2}$
+\end_inset
+
+ entstehen dabei, wenn angenommen wird, dass ein Liter Benzin 
+\begin_inset Formula $\unit[700]{g}$
+\end_inset
+
+ wiegt?
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\ce{2C8H18 + 25O2 -> 16CO2 + 18H2O}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\unit[100]{g}$
+\end_inset
+
+ Aluminium werden in Salzsäure aufgelöst.
+ Wie viel Wasserstoffgas entsteht dabei?
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\ce{2Al + 6HCl -> 2AlCl3 + 3H2 }$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Wenn man Kaliumpermanganat 
+\begin_inset Formula $\ce{KMnO4}$
+\end_inset
+
+ zu Salzsäure 
+\begin_inset Formula $\ce{HCl}$
+\end_inset
+
+ gibt, entsteht Chlorgas.
+ Wie viele Liter Chlorgas entstehen aus 
+\begin_inset Formula $\unit[100]{g}$
+\end_inset
+
+ Kaliumpermanganat?
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\ce{2KMnO4 + 16HCl -> 2KCl + 2MnCl2 + 8H2O + 5Cl2 }$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Zu einer Wasserstoffperoxidlösung 
+\begin_inset Formula $\ce{H2O2}$
+\end_inset
+
+ wird Kaliumpermanganat und Schwefelsäure gegeben.
+ Dabei entstehen 
+\begin_inset Formula $\unit[24,5]{ml}$
+\end_inset
+
+ Sauerstoff 
+\begin_inset Formula $\ce{O2}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $p=\unit[1,013]{bar}$
+\end_inset
+
+, 
+\begin_inset Formula $\vartheta=\unit[25]{°C}$
+\end_inset
+
+.
+ Wie viel Wasserstoffperoxid war in der Lösung vorhanden?
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\ce{2KMnO4 + 5H2O2 + 3H2SO4 -> K2SO4 + 2MnSO4 + 5O2 ^{\,}+ 8H2O}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Kontrollfragen
+\end_layout
+
+\begin_layout Enumerate
+Wie lauten die Grundprinzipien der Stöchiometrie?
+\end_layout
+
+\begin_layout Enumerate
+Gib die Avogadrosche Zahl an.
+\end_layout
+
+\begin_layout Enumerate
+Wie lautet die Definition von 
+\begin_inset Formula $\unit[1]{u}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+Wie lautet die Definition für die molare Masse?
+\end_layout
+
+\begin_layout Enumerate
+Wie lautet die Definition der Einheit Mol?
+\end_layout
+
+\begin_layout Enumerate
+Wie ist die Stoffmenge definiert?
+\end_layout
+
+\begin_layout Enumerate
+Wie lautet die allgemeine Gasgleichung? Beschreibe die Variablen und Konstanten.
+\end_layout
+
+\begin_layout Enumerate
+Warum ist die Stoffmenge so wichtig für die Chemie?
+\end_layout
+
+\end_body
+\end_document

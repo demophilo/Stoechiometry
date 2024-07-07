@@ -1,0 +1,427 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage [version=3] {mhchem}
+\mhchemoptions{font=sf}
+\usepackage [notextcomp,oldstylenums] {kpfonts}
+
+\usepackage{caption}
+
+\DeclareCaptionLabelSeparator{colonenskip}{:\enskip{}}
+\captionsetup [figure] {name=Abb.,font={sf,footnotesize},labelfont=bf,labelsep=colonenskip,singlelinecheck=false,justification=RaggedRight }
+\captionsetup [table] {name=Tab.,font={sf,small},labelfont=bf,labelsep=colonenskip,singlelinecheck=false,justification=RaggedRight}
+\title{Chemie verstehen -- Band I}
+\author{Karl Linek}
+\sloppy
+\usepackage{microtype}
+\end_preamble
+\options justified,marginals=raggedright,nofonts,sfsidenotes,a4paper,symmetric,notoc
+\use_default_options true
+\begin_modules
+theorems-ams
+\end_modules
+\maintain_unincluded_children false
+\language naustrian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation skip
+\defskip smallskip
+\quotes_language german
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+date{}
+\end_layout
+
+\end_inset
+
+Säuren und Basen
+\end_layout
+
+\begin_layout Section
+Konzept nach Arrhenius:
+\end_layout
+
+\begin_layout Definition
+Säuren sind Stoffe, die in Wasser 
+\begin_inset Formula $\ce{H+}$
+\end_inset
+
+-Ionen abgeben.
+\end_layout
+
+\begin_layout Definition
+Basen sind Stoffe, die in Wasser 
+\begin_inset Formula $\ce{OH-}$
+\end_inset
+
+-Ionen abgeben.
+\end_layout
+
+\begin_layout Standard
+Problem dieser Definition ist, dass sie an Wasser gebunden ist, und dass
+ es Stoffe gibt, die keine 
+\begin_inset Formula $\ce{OH-}$
+\end_inset
+
+-Ionen abgeben und dennoch basisch sind, wie z.
+\begin_inset space \thinspace{}
+\end_inset
+
+B.
+ Ammoniak.
+\end_layout
+
+\begin_layout Section
+Konzept nach Brønstet und Lowry
+\end_layout
+
+\begin_layout Definition
+Säuren sind Stoffe, die 
+\begin_inset Formula $\ce{H+}$
+\end_inset
+
+-Ionen abgeben (Protonendonator).
+\end_layout
+
+\begin_layout Definition
+Basen sind Stoffe, die 
+\begin_inset Formula $\ce{H+}$
+\end_inset
+
+-Ionen aufnehmen (Protonenacceptor).
+\end_layout
+
+\begin_layout Definition
+Ampholyte sind Stoffe, die sowohl 
+\begin_inset Formula $\ce{H+}$
+\end_inset
+
+-Ionen aufnehmen als auch abgeben können.
+\end_layout
+
+\begin_layout Standard
+Dieses Konzept ist unabhängig von Wasser und allgemeiner anwendbar.
+\end_layout
+
+\begin_layout Standard
+Wenn man das Massenwirkungsgesetz auf die Autoprotolyse von Wasser anwendet,
+ bekommt man das Ionenprodukt des Wassers:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $K_{W}=[\ce{H+}]\cdot[\ce{OH-}]=10^{-14}\frac{\unit{mol^{2}}}{\unit{l^{2}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Wenn man von dieser Gleichung den negativen dekadischen Logarithmus nimmt,
+ erhält man:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $pK_{W}=pH+pOH=14$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Allgemeine Gleichung für eine Säure:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ce{HA <=> H+ + A-}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Wenn man das MWG auf dieses Gleichgewicht anwendet, erhält man
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $K_{S}=\frac{[\ce{H+}]\cdot[\ce{A-}]}{[\ce{HA}]}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $K_{S}$
+\end_inset
+
+ ist die Säurekonstante.
+\end_layout
+
+\begin_layout Definition
+Eine starke Säure ist zu nahezu 100
+\begin_inset space \thinspace{}
+\end_inset
+
+% dissoziiert.
+ Eine schwache Säure ist nur gering dissoziiert.
+ 
+\end_layout
+
+\begin_layout Standard
+Starke Säuren haben einen 
+\begin_inset Formula $K_{S}$
+\end_inset
+
+-Wert größer als 1, für Schwache Säuren kleiner als 
+\begin_inset Formula $10^{-5}$
+\end_inset
+
+ und für mittelstarke Säuren dazwischen.
+ In Tabellenwerken wird meistens der 
+\begin_inset Formula $pK_{S}$
+\end_inset
+
+-Wert angegeben, das ist der negative dekadische Logarithmus der Säurekonstante.
+ Demnach haben starke Säuren einen negativen 
+\begin_inset Formula $pK_{s}$
+\end_inset
+
+-Wert.
+ Mittelstarke Säuren haben einen 
+\begin_inset Formula $pK_{S}$
+\end_inset
+
+-Wert zwischen 0 und 5.
+ Schwache Säuren haben einen 
+\begin_inset Formula $pK_{S}$
+\end_inset
+
+-Wert über 5.
+ Die obigen Aussagen gelten sinngemäß für Basen.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Berechnungsformeln für einwertige Säuren und Basen.
+ 
+\begin_inset Formula $c_{0}$
+\end_inset
+
+ ist die Ausgangskonzentration der Säure/Base.
+ Bei Basen muss der 
+\begin_inset Formula $pOH$
+\end_inset
+
+-Wert in den 
+\begin_inset Formula $pH$
+\end_inset
+
+-Wert umgerechnet werden: 
+\begin_inset Formula $pH=14-pOH$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Säure
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Base
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Stark
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $pH=-\lg(c_{0})$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $pOH=-\lg(c_{0})$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Schwach/mittelstark
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $pH=pK_{S}-\lg(c_{0})$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $pOH=pK_{B}-\lg(c_{0})$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

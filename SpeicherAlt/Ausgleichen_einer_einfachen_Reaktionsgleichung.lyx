@@ -1,0 +1,320 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+
+\renewcommand\abstractname{Abstract}
+\usepackage[version=3]{mhchem}
+\mhchemoptions{font=sf}
+
+\usepackage [notextcomp,oldstylenums,light] {kpfonts}
+
+\usepackage{caption}
+
+
+\DeclareCaptionLabelSeparator{colonenskip}{:\enskip{}}
+\captionsetup [figure] {name=Abb.,font={sf,footnotesize},labelfont=bf,labelsep=colonenskip,singlelinecheck=false,justification=RaggedRight }
+\captionsetup [table] {name=Tab.,font={sf,small},labelfont=bf,labelsep=colonenskip,singlelinecheck=false,justification=RaggedRight}
+\title{Chemiekurs}
+\author{Karl Linek}
+\sloppy
+\usepackage{microtype}
+\end_preamble
+\use_default_options true
+\begin_modules
+endnotes
+foottoend
+customHeadersFooters
+\end_modules
+\maintain_unincluded_children false
+\language naustrian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 2
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 0
+\branch Lösungen
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\index Stichwortverzeichnis
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 3cm
+\rightmargin 2cm
+\bottommargin 4cm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation skip
+\defskip medskip
+\quotes_language german
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Right Footer
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\size footnotesize
+©Karl Linek
+\end_layout
+
+\begin_layout Left Footer
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\size footnotesize
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+today{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+Ausgleichen einer einfachen Reaktionsgleichung
+\end_layout
+
+\begin_layout Standard
+Alle chemischen Reaktionen gelten als einfach, wenn sie keine Redoxreaktionen
+ sind.
+ Die Ausgangsfrage lautet, wie viele Moleküle reagieren mit einander und
+ wie viele Moleküle entstehen.
+ Die Bedingungen lauten:
+\end_layout
+
+\begin_layout Enumerate
+Es dürfen keine Teile (Atome oder Teile der Moleküle) übrig bleiben.
+\end_layout
+
+\begin_layout Enumerate
+Es können keine Atome verschwinden, entstehen oder in Atome anderer Elemente
+ verwandelt werden.
+\end_layout
+
+\begin_layout Enumerate
+Es wird die kleinste Anzahl der jeweiligen Moleküle gesucht, für die das
+ gilt, aber sie muss größer als Null sein.
+\end_layout
+
+\begin_layout Standard
+Zur allgemeinen Betrachtung wird von folgender allgemeinen Reaktionsgleichung
+ ausgegangen:
+\begin_inset Formula 
+\[
+\ce{\alpha A + \beta B ->  \gamma C + \delta D}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\ce{A}$
+\end_inset
+
+, 
+\begin_inset Formula $\ce{B}$
+\end_inset
+
+, 
+\begin_inset Formula $\ce{C}$
+\end_inset
+
+, 
+\begin_inset Formula $\ce{D}$
+\end_inset
+
+ stehen für Moleküle, die an dieser Reaktion teilnehmen.
+ Sie sind vorgegeben.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ce{\alpha}$
+\end_inset
+
+, 
+\begin_inset Formula $\ce{\beta}$
+\end_inset
+
+, 
+\begin_inset Formula $\ce{\gamma}$
+\end_inset
+
+, 
+\begin_inset Formula $\ce{\delta}$
+\end_inset
+
+ sind die sogenannten stöchiometrischen Koeffizienten.
+ Sie geben die Anzahl der zugehörigen Moleküle an, die an der Reaktion teilnehme
+n.
+ Sie sind ganze, positive Zahlen.
+ Sie gilt es zu bestimmen.
+\end_layout
+
+\begin_layout Standard
+Beispiel:
+\end_layout
+
+\begin_layout Standard
+Wasserstoff und Sauerstoff reagieren zu Wasser.
+\end_layout
+
+\begin_layout Standard
+Aus der obigen Angabe kann die Reaktionsgleichung aufgeschrieben werden.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 10mm
+width "50col%"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Box Shadowbox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "50col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+FAQ: Warum werden die Zahlen vor den Molekülen verändert, aber nicht die
+ tiefgestellten Zahlen in den Molekülen?
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Die tiefgestellten Zahlen in den Molekülen geben die Anzahl der Atome im
+ Molekül an.
+ Sie sind gemessen.
+ Mit gemessenen Werten müssen wir arbeiten, so wie sie sind.
+ Sie dürfen nicht verändert werden.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\ce{H2 +O2  -> H2O}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Wenn genau ein Molekül Wasserstoff mit einem Molekül Sauerstoff reagierte,
+ bliebe ein Atom Sauerstoff übrig.
+ Wenn jedoch zwei Moleküle Wasserstoff mit einem Molekül Sauerstoff reagierte,
+ bleibt kein Atom übrig.
+ Auf der rechten Seite der Reaktion entsteht dann aber nicht ein Molekül
+ Wasser, sondern deren zwei.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ce{2H2 +O2  -> 2H2O}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document

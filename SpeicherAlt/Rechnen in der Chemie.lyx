@@ -1,0 +1,289 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass tufte-book
+\begin_preamble
+\usepackage [version=3] {mhchem}
+\mhchemoptions{font=sf}
+\usepackage [notextcomp,oldstylenums] {kpfonts}
+\setcounter{secnumdepth}{1}
+\usepackage{caption}
+\usepackage{mcaption}
+\newcommand{\xyR}[1]{%
+\xydef@\xymatrixrowsep@{#1}}
+\newcommand{\xyC}[1]{%
+\xydef@\xymatrixcolsep@{#1}}
+\DeclareCaptionLabelSeparator{colonenskip}{:\enskip{}}
+\captionsetup{figurename=Abb.,tablename=Tab.,font={footnotesize,sf},justification=RaggedRight,labelfont=bf,singlelinecheck=false,labelsep=colonenskip}
+\title{Chemie verstehen -- Band I}
+\author{Karl Linek}
+\sloppy
+\usepackage{microtype}
+\end_preamble
+\options justified,marginals=raggedright,nofonts,sfsidenotes,a4paper,symmetric,notoc
+\use_default_options true
+\maintain_unincluded_children false
+\language naustrian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language polish
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+Das Einmaleins der Chemie
+\end_layout
+
+\begin_layout Standard
+Ab diesem Zeitpunkt war es zum ersten Mal möglich einfachste Umsatzberechnungen
+ zu machen.
+ Dazu ist es notwendig drei Gundgesetze zu akzeptieren.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Gesetz
+\begin_inset space ~
+\end_inset
+
+von
+\begin_inset space ~
+\end_inset
+
+der
+\begin_inset space ~
+\end_inset
+
+Erhaltung
+\begin_inset space ~
+\end_inset
+
+der
+\begin_inset space ~
+\end_inset
+
+Masse: Die Masse der Materie ist unveränderlich.
+ Materie kann weder zerstört noch vernichtet werden.
+\end_layout
+
+\begin_layout Standard
+Dies ist eine Absage an die Phlogistontheorie.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Gesetz
+\begin_inset space ~
+\end_inset
+
+von
+\begin_inset space ~
+\end_inset
+
+der
+\begin_inset space ~
+\end_inset
+
+Unveränderlichkeit
+\begin_inset space ~
+\end_inset
+
+der
+\begin_inset space ~
+\end_inset
+
+Elemente: Ein Element kann bei chemischen Reaktionen in kein anderes Element
+ umgewandelt werden.
+\end_layout
+
+\begin_layout Standard
+Dies ist ein Absage an die Alchemie.
+ Es beinhaltet jedoch, dass es Elemente gibt.
+ Also Stoffe, welche weder physikalisch noch chemisch weiter zerteilt werden
+ können.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Gesetz
+\begin_inset space ~
+\end_inset
+
+der
+\begin_inset space ~
+\end_inset
+
+konstanten
+\begin_inset space ~
+\end_inset
+
+Proportionen: Eine chemische Verbindung hat eine konstante Zusammensetzung.
+\end_layout
+
+\begin_layout Standard
+Dieses Gesetz eine Folgerung der aus vier Prämissen:
+\end_layout
+
+\begin_layout Enumerate
+Die Materie besteht aus unteilbaren Einheiten.
+ Sie werden Atome genannt.
+\end_layout
+
+\begin_layout Enumerate
+Die Atome eines Elements haben alle die gleiche Masse.
+\end_layout
+
+\begin_layout Enumerate
+Ein Molekül ist ein Zusammenschluss von Atomen.
+\end_layout
+
+\begin_layout Enumerate
+Ein chemische Verbindung besteht aus einer Sorte von Molekülen.
+\end_layout
+
+\begin_layout Standard
+Nun war es zunächst notwendig, die Masse eines Atoms eines Element in Relation
+ zu einem Atom eines anderen Elements zu bestimmen.
+ Bald fand man heraus, dass Wasserstoff das leichteste Element ist und dass
+ fast alle Elemente um ein ganzzahliges Vielfaches schwerer als Wasserstoff
+ sind.
+ Kohlenstoff ist z.
+\begin_inset space \thinspace{}
+\end_inset
+
+B.
+ zwölf Mal schwerer als Wasserstoff, Sauerstoff 16 Mal schwerer und Stickstoff
+ 14 mal schwerer.
+ Nun konnte man aus der Analyse eines Stoffes schließen, wie er zusammengesetzt
+ ist.
+\end_layout
+
+\begin_layout Standard
+Eine Beispiel: Die Analyse ergibt, dass Wasser zu 11,1 % aus Wasserstoff
+ 
+\begin_inset Formula $\ce{{H}}$
+\end_inset
+
+ und zu 88,9 % aus Sauerstoff 
+\begin_inset Formula $\ce{{O}}$
+\end_inset
+
+ besteht.
+ Ein Sauerstoffatom ist 16 Mal schwerer als ein Wasserstoffatom.
+ Wasser muss also aus zwei Atomen Wassrstoff und einem Atom Sauerstoff bestehen.
+\end_layout
+
+\begin_layout Standard
+Als nun die Verbindungen analysiert waren, hatte man die Daten um Umsätze
+ zu berechnen.
+\end_layout
+
+\begin_layout Standard
+Wieder ein Beispiel: Wenn man Wasserstoff mit Sauerstoff reagieren lässt,
+ entsteht Wasser.
+ Die Reaktionsgleichung lautet somit:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+ce{H2 + O2 -> H2O}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Doch es kann nicht sein, das ein Molekül Sauerstoff mit einem Molekül Wassrstoff
+ reagiert.
+ Wo ist das zweite Sauerstoffatom geblieben? Es müssen also zwei Wasserstoffmole
+küle mit einem Sauerstoffmoleküle regieren.
+ Dann entstehen auch zwei Wassermoleküle.
+ Die richtige Reaktionsgleichung lautet also:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+ce{2H2 + O2 -> 2H2O}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
