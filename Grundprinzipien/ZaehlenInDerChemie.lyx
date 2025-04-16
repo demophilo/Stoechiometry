@@ -9,17 +9,14 @@
 \usepackage [version=3] {mhchem}
 \mhchemoptions{font=sf}
 \usepackage [notextcomp,oldstylenums] {kpfonts}
-
+\setcounter{secnumdepth}{1}
 \usepackage{caption}
 \usepackage{mcaption}
-\newcommand{\xyR}[1]{%
-\xydef@\xymatrixrowsep@{#1}}
-\newcommand{\xyC}[1]{%
-\xydef@\xymatrixcolsep@{#1}}
+
 \DeclareCaptionLabelSeparator{colonenskip}{:\enskip{}}
 \captionsetup [figure] {name=Abb.,font={sf,footnotesize},labelfont=bf,labelsep=colonenskip,singlelinecheck=false,justification=RaggedRight }
 \captionsetup [table] {name=Tab.,font={sf,small},labelfont=bf,labelsep=colonenskip,singlelinecheck=false,justification=RaggedRight}
-\title{Einfach Chemie -- Band I}
+\title{Stöchiometrie}
 \author{Karl Linek}
 \sloppy
 
@@ -27,6 +24,9 @@
   {\begin{@tufte@margin@float}[#1]{figure}
     \captionsetup{name=Abb.,font={sf,footnotesize},labelfont=bf,labelsep=colonenskip,singlelinecheck=false,justification=RaggedRight }}
   {\end{@tufte@margin@float}}
+% Added by lyx2lyx
+\setlength{\parskip}{\medskipamount}
+\setlength{\parindent}{0pt}
 \end_preamble
 \options justified,marginals=raggedright,nofonts,sfsidenotes,a4paper,symmetric,notoc
 \use_default_options true
@@ -54,22 +54,9 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
-\float_placement class
-\float_alignment class
-\paperfontsize 10
+\paperfontsize default
 \spacing single
-\use_hyperref true
-\pdf_title "Chemie einfach erklärt"
-\pdf_author "Karl Linek"
-\pdf_bookmarks true
-\pdf_bookmarksnumbered false
-\pdf_bookmarksopen false
-\pdf_bookmarksopenlevel 1
-\pdf_breaklinks false
-\pdf_pdfborder false
-\pdf_colorlinks false
-\pdf_backref false
-\pdf_pdfusetitle true
+\use_hyperref false
 \papersize default
 \use_geometry true
 \use_package amsmath 1
@@ -83,7 +70,7 @@
 \use_package stmaryrd 1
 \use_package undertilde 1
 \cite_engine natbib
-\cite_engine_type default
+\cite_engine_type authoryear
 \biblio_style plain
 \use_bibtopic false
 \use_indices false
@@ -94,7 +81,7 @@
 \use_formatted_ref 0
 \use_minted 0
 \use_lineno 0
-\index Stichwortverzeichnis
+\index Index
 \shortcut idx
 \color #008000
 \end_index
@@ -123,50 +110,7 @@
 
 \begin_body
 
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-frontmatter
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-maketitle
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "Grundprinzipien/Grundprinzipien.lyx"
-literal "true"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
+\begin_layout Chapter
 Das atomare Urkilogramm
 \end_layout
 

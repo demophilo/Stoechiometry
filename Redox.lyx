@@ -1,0 +1,2377 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+
+\renewcommand\abstractname{Abstract}
+\usepackage[version=3]{mhchem}
+\mhchemoptions{font=sf}
+\usepackage{sectsty}
+\allsectionsfont{\sffamily}
+
+\usepackage [notextcomp,oldstylenums,light] {kpfonts}
+
+\usepackage{caption}
+
+
+\DeclareCaptionLabelSeparator{colonenskip}{:\enskip{}}
+\captionsetup [figure] {name=Abb.,font={sf,footnotesize},labelfont=bf,labelsep=colonenskip,singlelinecheck=false,justification=RaggedRight }
+\captionsetup [table] {name=Tab.,font={sf,small},labelfont=bf,labelsep=colonenskip,singlelinecheck=false,justification=RaggedRight}
+\title{\textsf{ Chemiekurs}}
+\author{\textsf{ Karl Linek}}
+
+\usepackage[thmmarks,thref]{ntheorem}
+\theoremseparator{:}
+\newtheorem{afg}{Aufgabe}%[section] Im Text: \begin{afg}...\end{afg}
+
+\sloppy
+% Added by lyx2lyx
+\setlength{\parskip}{\medskipamount}
+\setlength{\parindent}{0pt}
+\end_preamble
+\use_default_options true
+\begin_modules
+endnotes
+foottoend
+customHeadersFooters
+\end_modules
+\maintain_unincluded_children no
+\language naustrian
+\language_package default
+\inputencoding auto-legacy
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype true
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 2
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 0
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\branch Lösungen
+\selected 0
+\filename_suffix 0
+\color background background
+\end_branch
+\index Stichwortverzeichnis
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 3cm
+\rightmargin 2cm
+\bottommargin 4cm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style german
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Right Footer
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\size footnotesize
+©Karl Linek
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\size footnotesize
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+maketitle
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+\noindent
+Es wird eine allgemein verwendbare Prozedur für das Ausgleichen von Redoxreaktionen abgehandelt.
+ Sie ermittelt nicht nur die stöchiometrischen Koeffizienten,
+ sondern ergänzt auch die Reaktionsgleichung um fehlende Moleküle,
+ welche nicht direkt an der Redoxreaktion teilnehmen,
+ und ist auch für Reaktionen im basischen Milieu verwendbar.
+ In Beispielen werden simultane Redoxreaktionen,
+ Disproportionierungen und Komproportionierungen vorgerechnet.
+ Übungsbeispiele samt Lösungen sind angeschlossen.
+\end_layout
+
+\begin_layout Section
+Begriffe
+\end_layout
+
+\begin_layout Standard
+Als Redoxatome werden in diesem Artikel Atome bezeichnet,
+ die oxidiert oder reduziert werden.
+\end_layout
+
+\begin_layout Standard
+Als Halbreaktionen werden jene Teile einer Reaktion bezeichnet,
+ welche nur dem oxidativen oder nur dem reduktiven Teil einer Redoxreaktion zugeordnet werden können.
+ Eine Halbreaktion kann daher der Oxidation und eine der Reduktion zugeordnet werden.
+\end_layout
+
+\begin_layout Standard
+Gegenionen sind geladene Teilchen,
+ welche nicht an der Redoxreaktion teilnehmen,
+ aber notwendig sind,
+ um die Ladungen der reagierenden Moleküle zu neutralisieren.
+ Sie sind in weiten Bereichen frei wählbar.
+ Es muss nur gewährleistet sein,
+ dass sie unter den Reaktionsbedingungen innert sind.
+ Es gibt jedoch auch Redoxreaktionen ohne passive Gegenionen.
+\end_layout
+
+\begin_layout Standard
+Von simultanen Redoxreaktionen wird hier gesprochen,
+ wenn sowohl die Anionen als auch die Kationen eines Salzes oxidiert werden.
+ Obwohl beide Oxidationen einer Reduktion gegenüberstehen,
+ wird jede dieser Oxidationen als Halbreaktion bezeichnet.
+ 
+\end_layout
+
+\begin_layout Standard
+Aus diesen Begriffsbestimmungen folgt,
+ dass eine Redoxreaktion aus mindestens einer oxidativen Halbreaktion,
+ mindestens einer reduktiven Halbreaktion und fakultativ aus Gegenionen besteht.
+\end_layout
+
+\begin_layout Section
+Einfache Redoxreaktionen
+\end_layout
+
+\begin_layout Standard
+Einfache Redoxreaktionen zeichnen sich durch ihren abgeschlossenen Charakter aus.
+ Das heißt,
+ es kommen nur Moleküle vor,
+ die Atome enthalten,
+ die an der Redoxreaktion beteiligt sind.
+ Solche Reaktionen sind auch ohne das hier vorgestellte Prozedere leicht lösbar.
+ 
+\end_layout
+
+\begin_layout Standard
+Beispiel:
+ 
+\begin_inset Formula $\ce{Fe2O3 + CO -> Fe +CO2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Oxidationszahlen bestimmen:
+
+\series default
+ Die Oxidationszahlen aller Atome in der Reaktion werden bestimmt und über die Elementsymbole geschrieben.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\ce{\overset{\textrm{+}3}{\ce{Fe}}2\overset{\textrm{-}2}{\ce{O}}3 + \overset{\textrm{+}2}{\ce{C}}\overset{\textrm{-}2}{\ce{O}} ->\overset{0}{\ce{Fe}} + \overset{\textrm{+}4}{\ce{C}}\overset{\textrm{-}2}{\ce{O}}2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Erste Halbreaktion bestimmen:
+
+\series default
+ Die Halbreaktionen werden separat aufgeschrieben und ausgeglichen.
+ Man erkennt die Halbreaktionen daran,
+ dass sich bei einem Element die Oxidationszahl geändert hat.
+ Sollte in der Angabe ein Gegenion angegeben sein,
+ lässt man es weg.
+ Sauerstoff wird jedoch nicht weggelassen.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\ce{Fe2O3 -> Fe}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Das Redoxatom wird ausgeglichen.
+ Das ist jenes Element,
+ bei dem sich die Oxidationszahl ändert.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\ce{Fe2O3 -> 2Fe}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Die übergehenden Elektronen werden ergänzt.
+ Die Anzahl der übergehenden Elektronen ist die Differenz der Oxidationszahlen (rechtes Molekül minus linkes Molekül) multipliziert mit der Anzahl der Redoxatome.
+ In diesem Fall:
+ 
+\begin_inset Formula $[0-(+3)]\cdot2=-6$
+\end_inset
+
+.
+ Wenn das Ergebnis negativ ist,
+ werden die Elektronen links angeschrieben,
+ sonst rechts.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\ce{Fe2O3 + 6e- -> 2Fe}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Nun werden die Sauerstoffatome mit Hilfe von Wasser ausgeglichen.
+ Das heißt,
+ dass auf jene Seite,
+ welche weniger Sauerstoffatome hat,
+ so viele Wassermoleküle addiert werden,
+ bis die Halbreaktion hinsichtlich der Sauerstoffatome ausgeglichen ist:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\ce{Fe2O3 + 6e- -> 2Fe + 3H2O}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Schritt:
+ Das gleiche wiederholt man für die Wasserstoffatome,
+ wobei man zum Ausgleichen verwendet:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\ce{Fe2O3 + 6H+ + 6e- -> 2Fe + 3H2O}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Nun sollte inklusive der Ladung (Probe!) alles ausgeglichen sein.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Zweite Halbreaktion bestimmen:
+
+\series default
+ Nun wird diese Prozedur für die zweite Halbreaktion wiederholt.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\ce{CO -> CO2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Redoxatom ist schon ausgeglichen.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{CO -> CO2 + 2e-}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{CO + H2O -> CO2 + 2e-}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{CO + H2O -> CO2 +2H+ + 2e-}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Elektronen ausgleichen:
+
+\series default
+ Nun werden bei beiden Halbreaktionen die die Anzahl der Elektronen angeglichen.
+ Das heißt,
+ jede Halbreaktion wird mit einem Faktor multipliziert,
+ sodass hinsichtlich der Elektronen das kgV herauskommt.
+ In diesem Fall ist das kgV 6:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features tabularvalignment="middle">
+<column alignment="decimal" decimal_point=">" valignment="top" width="0pt">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="decimal" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\ce{Fe2O3 + 6H+ + 6e- -> 2Fe + 3H2O}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\cdot1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="decimal" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\ce{CO + H2O -> CO2 + 2H+ + 2e-}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\cdot3$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "1ex"
+width "80mm"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\ce{Fe2O3 + 6H+ +6e- -> 2Fe + 3H2O}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\ce{3CO + 3H2O -> 3CO2 + 6H+ + 6e-}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Addieren der Gleichungen:
+
+\series default
+ Nun werden die Gleichungen zusammengezählt.
+ Es wird empfohlen Addieren und Vereinfachen nicht in einem Schritt durchzuführen,
+ da man leicht den Überblick verliert.
+ Daher ist dieser Schritt eine reine Abschreibübung.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\ce{Fe2O3 + 6H+ + 6e- -> 2Fe + 3H2O}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\ce{3CO + 3H2O -> 3CO2 + 6H+ + 6e-}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "1ex"
+width "80mm"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\ce{Fe2O3 + 6H+ + 3CO + 3H2O + 6e- -> 2Fe + 3H2O + 3CO2 + 6H+ + 6e-}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Vereinfachen:
+
+\series default
+ Nun werden alle überzähligen Moleküle und Elektronen auf beiden Seiten gestrichen:
+ In diesem Fall verschwinden nicht nur alle Elektronen aus der Gleichung – was sein muss – sondern auch alles Wasser und alle 
+\begin_inset Formula $\ce{H+}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\ce{Fe2O3 + 3CO -> 2Fe + 3CO2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Schritt Basisch machen:
+
+\series default
+ Diese Reaktion gilt für saure Bedingungen.
+ Wenn die Reaktion im basischen Milieu ablaufen soll,
+ addiert man an dieser Stelle angekommen so viele 
+\begin_inset Formula $\ce{OH-}$
+\end_inset
+
+-Ionen,
+ wie 
+\begin_inset Formula $\ce{H+}$
+\end_inset
+
+-Ionen vorhanden sind.
+ Eventuell sind nochmal überzählige Wassermoleküle zu streichen.
+ In diesem Beispiel ist dieser Schritt nicht notwendig,
+ da die Reaktion nicht im basischen Milieu statt findet.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Schritt Gegenionen hinzufügen:
+
+\series default
+ Gegenionen werden hinzugefügt und die Ionen zu Molekülen vereinigt.
+ Das ist hier nicht notwendig,
+ weil keine überzähligen Ladungen auftreten.
+\begin_inset Newline newline
+\end_inset
+
+Manchmal sind keine vollständigen Reagenzien vorgegeben,
+ sondern nur die Anionen und die Kationen,
+ die am Redoxvorgang direkt beteiligt sind.
+ Meistens ist die Aufgabe damit gelöst,
+ aber manchmal wird gefordert die Ionen der Redoxreaktion mit Gegenionen,
+ die man selbst bestimmen soll,
+ auszugleichen.
+\begin_inset Newline newline
+\end_inset
+
+Auch wenn man prinzipiell alle möglichen Ionen wählen kann,
+ sollte man beachten,
+ dass es Ionen gibt,
+ die unter den gegebenen Bedingungen ebenfalls reagieren.
+ Diese Gegenionen sollte man vermeiden.
+ Wie man ein Salz berechnet,
+ bei dem Kation und Anion reagieren,
+ wird im Abschnitt 
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "sec:Simultane-Redoxreaktionen"
+nolink "false"
+
+\end_inset
+
+ gezeigt.
+ Außerdem sollte man möglichst mehrfach geladene Ionen nicht als Gegenionen vorsehen,
+ da man eventuell die Gleichung nochmals anpassen muss.
+\begin_inset Newline newline
+\end_inset
+
+Bei den Kationen sollte man sich von den zusammengesetzten Ionen wie etwa 
+\begin_inset Formula $\ce{NH4+}$
+\end_inset
+
+ fern halten,
+ da sie eventuell auch oxidiert werden.
+\begin_inset Newline newline
+\end_inset
+
+Auch sollte man keine Gegenionen nehmen,
+ die unter den gegebenen Bedingungen schwer lösliche Salze,
+ Komplexe oder Gase bilden.
+ Zum Beispiel nicht 
+\begin_inset Formula $\ce{Fe3+}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\ce{Al3+}$
+\end_inset
+
+ oder 
+\begin_inset Formula $\ce{Ag+}$
+\end_inset
+
+ im basischen Bereich oder 
+\begin_inset Formula $\ce{Ca2+}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\ce{Sr2+}$
+\end_inset
+
+ oder 
+\begin_inset Formula $\ce{Br2+}$
+\end_inset
+
+,
+ wenn man mit Schwefelsäure ansäuert.
+ Im sauren Bereich sollte man 
+\begin_inset Formula $\ce{CO3^{2-}}$
+\end_inset
+
+ vermeiden.
+\begin_inset Newline newline
+\end_inset
+
+Die Empfehlung für Kationen lautet,
+ 
+\begin_inset Formula $\ce{Na+}$
+\end_inset
+
+ oder 
+\begin_inset Formula $\ce{K+}$
+\end_inset
+
+ zu wählen,
+ da von diesen Kationen fast nur lösliche Salze und fast keine Komplexe existieren.
+ Es gibt viele Reagenzien,
+ die diese Kationen enthalten.
+ Sie sind leicht verfügbar sind und es finden keine Nebenreaktionen statt.
+ Man kann daher kaum einen Fehler machen,
+ wenn man sich für diese Ionen entscheidet.
+ In der Permanganometrie wird üblicherweise 
+\begin_inset Formula $\ce{KMnO4}$
+\end_inset
+
+ verwendet,
+ sodass 
+\begin_inset Formula $\ce{K+}$
+\end_inset
+
+ da vorzuziehen ist,
+ sonst ist eher 
+\begin_inset Formula $\ce{Na+}$
+\end_inset
+
+ zu nehmen.
+ Aber solange nichts vorgegeben wird,
+ ist es egal,
+ was man nimmt.
+ Es ist eher so,
+ dass man an diesen Details die Erfahrung erkennt.
+\begin_inset Newline newline
+\end_inset
+
+Bei den Anionen sollte man sich von Halogeniden fern halten.
+ Starke Oxidationsmittel wie Permanganat oxidieren Chloridionen zum elementaren Chlor,
+ da solche Reaktionen üblicherweise unerwünscht sind,
+ wäre es ein Fehler,
+ sie als Gegenionen vorzusehen.
+ Bei Reaktionen mit Permanganat,
+ Dichromat und Blei(IV)oxid sind Hallogenide außer Fluorid,
+ welches jedoch generell nicht genommen werden sollte,
+ zu vermeiden.
+ Das Sulfation ist im wässrigen Milieu stabil und daher meistens erste Wahl,
+ auch wenn man die Gleichung nochmals anpassen muss.
+ Wenn man jedoch ein Kation hat,
+ dass ein schwer lösliches Sulfat bildet,
+ 
+\begin_inset Newline newline
+\end_inset
+
+Manchmal wird eine Säure als Redoxpartner verwendet.
+ In solchen Fällen kann das entsprechende Anion als Gegenion verwendet werden.
+ Diese Säure wird somit im Überschuss eingesetzt,
+ was praxisnah ist.
+ Dadurch ergibt sich bei der Säure meistens ein höherer stöchiometrischer Faktor nach diesem Schritt.
+ Ein Beispiel wäre die Oxidation von Chlorid mit Permanganat.
+ Anstatt Schwefelsäure ins Spiel zu bringen,
+ ist es besser vorzusehen,
+ dass in Salzsäure gearbeitet wird.
+ Siehe gerechnetes Beispiel im Abschnitt 
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "sec:Komplizierte-Redoxreaktionen"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Komplizierte Redoxreaktionen
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Komplizierte-Redoxreaktionen"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Bei komplizierten Redoxreaktionen kommen Moleküle vor,
+ deren Atome weder oxidiert noch reduziert wurden.
+ Zusätzlich kommen oft Elemente auf einer Reaktionsseite in mehreren Molekülen vor.
+ Algebraisch kommt das auf ein Lösen eines Gleichungssystems hinaus,
+ welches nicht mehr im Kopf gelöst werden kann.
+ Das vorgestellte Prozedere umgeht das algebraische Verfahren und kann sogar fehlende Moleküle vorhersagen.
+ Es ist deswegen dem algebraischen Verfahren vorzuziehen.
+ 
+\end_layout
+
+\begin_layout Standard
+Beispiel:
+ Ausgleichen von 
+\begin_inset Formula $\ce{KMnO4 + HCl -> MnCl2 + KCl + Cl2 + H2O}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In diesem Beispiel kommen auf der Seite der Produkte die Moleküle 
+\begin_inset Formula $\ce{KCl}$
+\end_inset
+
+ und 
+\begin_inset Formula $\ce{H2O}$
+\end_inset
+
+ vor,
+ deren Atome nicht oxidiert oder reduziert wurden.
+ Zusätzlich enthalten drei von vier Produkten Chloratome.
+ Der hier vorgegebene Algorithmus würde diese Moleküle fordern,
+ falls sie fehlten.
+\end_layout
+
+\begin_layout Standard
+Dieses Beispiel zeigt außerdem,
+ warum man auch in der Theorie Chloridionen nicht als Gegenionen vorsehen sollte.
+ Für die Laborpraxis zeigt es,
+ dass man auf keinen Fall Salzsäure zum Ansäuern von Redoxreaktionen verwenden darf,
+ wenn das Oxidationsmittel stark ist.
+ Stattdessen verwendet man üblicherweise verdünnte Schwefelsäure.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{\overset{+1}{\ce{K}}\overset{+7}{\ce{Mn}}\overset{+2}{\ce{O}}4 + \overset{+1}{\ce{H}}\overset{-1}{\ce{Cl}} -> \overset{+2}{\ce{Mn}}\overset{-1}{\ce{Cl}}2 + \overset{+1}{\ce{K}}\overset{-1}{Cl} + \overset{0}{\ce{Cl}}2 + \overset{+1}{\ce{H}}2\overset{-2}{\ce{O}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Erste Halbreaktion
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\ce{MnO4- -> Mn^{2+}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Zentralatom ist schon ausgeglichen.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{MnO4- +5e- -> Mn^{2+}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{MnO4- +5e- -> Mn^{2+} + 4H2O}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{MnO4- + 8H^{+} + 5e- -> Mn^{2+} + 4H2O}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Zweite Halbreaktion
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\ce{Cl- -> Cl2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{2Cl- -> Cl2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{2Cl- -> Cl2 + 2e-}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Kein Sauerstoff zum Ausgleichen.
+\end_layout
+
+\begin_layout Enumerate
+Kein Wasserstoff zum Ausgleichen.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\ce{MnO4- + 8H^{+} + 5e- -> Mn^{2+} + 4H2O}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\cdot2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\ce{2Cl- -> Cl2 + 2e-}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\cdot5$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{2MnO4- + 16H^{+} + 10Cl- + 10e- -> 2Mn^{2+} + 8H2O + 5Cl2 + 10e^{-}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{2MnO4- + 16H+ + 10Cl- -> 2Mn^{2+} + 8H2O + 5Cl2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Diese Reaktion findet in saurem Milieu statt,
+ daher wird dieser Schritt hier ausgelassen.
+\end_layout
+
+\begin_layout Enumerate
+Als Gegenkation für das Permanganation wird gemäß Vorgabe 
+\begin_inset Formula $\ce{K+}$
+\end_inset
+
+ genommen,
+ daher gibt es zwei 
+\begin_inset Formula $\ce{K+}$
+\end_inset
+
+-Ionen,
+ welche auf der rechten Seite hinzugefügt werden müssen.
+ Nachdem zehn der 16 
+\begin_inset Formula $\ce{H+}$
+\end_inset
+
+-Ionen mit 
+\begin_inset Formula $\ce{Cl-}$
+\end_inset
+
+-Ionen kombiniert wurden,
+ bleiben noch sechs 
+\begin_inset Formula $\ce{H+}$
+\end_inset
+
+-Ionen über.
+ Es sind daher noch weitere sechs 
+\begin_inset Formula $\ce{Cl-}$
+\end_inset
+
+-Ionen notwendig,
+ welche nun als Gegenionen fungieren und nicht als Redoxpartner.
+ Auch diese Ionen sind auf der rechten Seite hinzuzufügen.
+ Da man Chloridionen als Redoxpartner benutzt kann keine unerwünschte Nebenreaktion auftreten und die Chloridionen stören nicht.
+ Wenn jedoch die Chloridionen mit Permanganat titriert werden,
+ müsste Schwefelsäure zum Ansäuern verwendet werden.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\ce{2KMnO4 + 16HCl -> 2Mn^{2+} + 8H2O + 5Cl2 + 2K+ + 6Cl-}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Nun können auch die Ionen auf der rechten Seite zu Formeleinheiten zusammengefügt werden.
+ Es sollten keine einzelnen Ionen übrig bleiben,
+ sonst hat man irgendwo einen Fehler gemacht.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\ce{2KMnO4 + 16HCl -> 2MnCl2 + 8H2O + 5Cl2 + 2KCl}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Basisches Milieu
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{\overset{0}{Al} + \overset{+1}{\ce{Na}}\overset{-2}{\ce{O}}\overset{+1}{\ce{H}} + \overset{+1}{\ce{H}}2\overset{-2}{\ce{O}} -> \overset{+1}{\ce{Na}}[\overset{+3}{\ce{Al}}(\overset{-2}{\ce{O}}\overset{+1}{\ce{H}})4] + \overset{0}{\ce{H}}2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Erste Halbreaktion:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\ce{Al -> [Al(OH)4]-}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Redoxatom ist ausgeglichen.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{Al -> [Al(OH)4]- + 3e-}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{Al + 4H2O -> [Al(OH)4]- + 3e-}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{Al + 4H2O -> [Al(OH)4]- + 4H+ + 3e-}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+zweite Halbreaktion:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\ce{OH- -> H2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{2OH- -> H2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{2OH- + 2e- -> H2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{2OH- + 2e- -> H2 + H2O}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{2OH- + 4H+ + 2e- -> H2 + 2H2O}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Schon an dieser Stelle könnte man diese Reaktion ausnahmsweise vereinfachen,
+ indem man die 
+\begin_inset Formula $\ce{H+}$
+\end_inset
+
+-Ionen und die 
+\begin_inset Formula $\ce{OH-}$
+\end_inset
+
+-Ionen zu 
+\begin_inset Formula $\ce{H2O}$
+\end_inset
+
+ zusammenfasst und dann auf beiden Seiten kürzt.
+ Um zu zeigen,
+ dass diese Prozedur gegen Ausnahmen stabil ist,
+ wurde,
+ ohne sofort zu vereinfachen,
+ fortgesetzt.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="left" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\ce{Al + 4H2O -> [Al(OH)4]- + 4H+ + 3e-}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\cdot2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\ce{2OH- + 4H+ +2e- -> H2 + 2H2O}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\cdot3$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{2Al + 8H2O + 6OH- + 12H+ + 6e- -> 2[Al(OH)4]- + 8H+ + 6e- + 3H2 + 6H2O}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{2Al + 8H2O -> 2[Al(OH)4]- + 2H+ + 3H2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Unter Punkt 6 treten auf der rechten Seite zwei 
+\begin_inset Formula $\ce{H+}$
+\end_inset
+
+-Ionen auf .
+ Die Gleichung wird basisch gemacht,
+ indem man auf beiden Seiten so viele 
+\begin_inset Formula $\ce{OH-}$
+\end_inset
+
+-Ionen addiert,
+ wie 
+\begin_inset Formula $\ce{H+}$
+\end_inset
+
+-Ionen vorhanden sind – egal auf welcher Seite diese auftreten.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\ce{2Al + 8H2O + 2OH- -> 2[Al(OH)4]- + 2H+ + 2OH- + 3H2}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Nun muss noch einmal vereinfacht werden.
+ Die 
+\begin_inset Formula $\ce{H+}$
+\end_inset
+
+-Ionen und die 
+\begin_inset Formula $\ce{OH-}$
+\end_inset
+
+-Ionen werden zu 
+\begin_inset Formula $\ce{H2O}$
+\end_inset
+
+ und dann mit der linken Seite gegengerechnet.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\ce{2Al + 6H2O + 2OH- -> 2[Al(OH)4]- + 3H2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{2Al + 6H2O + 2NaOH -> 2Na[Al(OH)4] + 3H2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Simultane Redoxreaktionen
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Simultane-Redoxreaktionen"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Es kann vorkommen,
+ dass in einem Molekül zwei Elemente gibt,
+ welche beide oxidiert oder reduziert werden.
+ Bei diesen Reaktionen treten daher zwei Halbreaktionen auf,
+ welche stöchiometrisch voneinander abhängen und mit der anderen Seite abgeglichen werden müssen.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ce{CrI3 + KOH + Cl2 -> K2CrO4 + KIO3 + KCl + H2O}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{\overset{+3}{\ce{Cr}}\overset{-1}{\ce{I}}3 + \overset{+1}{\ce{K}}\overset{-2}{\ce{O}}\overset{+1}{\ce{H}} + \overset{0}{\ce{Cl}}2 -> \overset{+1}{\ce{K}}2\overset{+6}{\ce{Cr}}\overset{-2}{\ce{O}}4 + \overset{+1}{\ce{K}}\overset{+5}{\ce{I}}\overset{-2}{\ce{O}}3 + \overset{+1}{\ce{K}} \overset{-1}{Cl} + \overset{+1}{\ce{H}}2\overset{-2}{O}}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Sowohl Chrom als auch Iod werden oxidiert.
+\end_layout
+
+\begin_layout Enumerate
+Erste Halbreaktionen:
+ Da für jedes Chromatom drei Iodatome vorhanden sind,
+ muss dieses Verhältnis (
+\begin_inset Formula $1:3$
+\end_inset
+
+) sich auf alle Beziehungen beider Halbreaktionen auswirken.
+ Unter Punkt 2.(a) ist dieses Verhältnis bei den Edukten zu berücksichtigen und unter Punkt 2.(b) auf die Produkte zu erweitern.
+ Ansonsten ist dieser Schritt für beide Halbreaktionen jede für sich wie gehabt abzuarbeiten.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\ce{Cr^{3+} -> CrO4^{2-}}$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\ce{3I- -> IO3-}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{Cr^{3+} -> CrO4^{2-}}$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\ce{3I- -> 3IO3-}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{Cr^{3+} -> CrO4^{2-} + 3e-}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\ce{3I- -> 3IO3- + 18e-}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{Cr^{3+} + 4H2O -> CrO4^{2-} + 3e-}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\ce{3I- + 9H2O -> 3IO3- + 18e-}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{Cr^{3+} + 4H2O -> CrO4^{2-} + 8H+ + 3e-}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\ce{3I- + 9H2O -> 3IO3- + 18H+ + 18e-}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Zweite Halbreaktion:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\ce{Cl2 -> Cl-}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{Cl2 -> 2Cl-}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{Cl2 + 2e- -> 2Cl-}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Es gibt keinen Sauerstoff,
+ der ausgeglichen werden müsste.
+\end_layout
+
+\begin_layout Enumerate
+Es gibt keinen Wasserstoff,
+ der ausgeglichen werden müsste.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Zu beachten ist,
+ dass die übergehenden Elektronen,
+ der ersten Halbreaktionen zusammengezählt werden müssen und von dieser Summe das kgV mit der zweiten Halbreaktion gesucht wird:
+ 
+\begin_inset Formula $18+3=21\Rightarrow\textrm{kgV}(21;\:2)=42$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\ce{Cr^{3+} + 4H2O -> CrO4^{2-} + 8H+ + 3e-}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="center" valignment="middle" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Bigr\}\cdot2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\ce{3I- + 9H2O -> 3IO3- + 18H+ +18e-}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\ce{Cl2 + 2e- -> 2Cl-}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\cdot21$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Ab hier geht es wie gehabt weiter.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\ce{2Cr^{3+} + 8H2O + 6I- + 18H2O + 21Cl2 + 42e- -> 2CrO4^{2-} + 16H+ +6e- + 6IO3- + 36H+ + 36e- + 42Cl-}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{2Cr^{3+} + 6I- + 26H2O + 21Cl2 -> 2CrO4^{2-} + 6IO3- + 52H+ + 42Cl-}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{2Cr^{3+} + 6I- + 21Cl2 + 52OH- -> 2CrO4^{2-} + 6IO3- + 26H2O + 42Cl-}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{2CrI3 + 21Cl2 + 52KOH -> 2K2CrO4 + 6KIO3 + 26H2O + 42KCl}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Komproportionierungen und Disproportionierungen
+\end_layout
+
+\begin_layout Standard
+Bei Komproportionierungen entsteht aus zwei verschiedenen Oxidationsstufen eines Elements eine einzige,
+ mittlere Oxidationsstufe.
+ 
+\end_layout
+
+\begin_layout Standard
+Beispiel 
+\begin_inset Formula $\ce{CO(NH2)2+HNO2 ->N2+CO2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{\overset{+4}{\ce{C}}\overset{-2}{\ce{O}}(\overset{-3}{\ce{N}}\overset{+1}{\ce{H}}2)2 + \overset{+1}{\ce{H}}\overset{+3}{\ce{N}}\overset{-2}{\ce{O}}2 -> \overset{0}{\ce{N}}2 + \overset{+4}{\ce{C}}\overset{-2}{\ce{O}}2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Erste Halbreaktion:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\ce{CO(NH2)2 -> N2 + CO2}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Zu beachten ist bei 
+\begin_inset Formula $\ce{CO(NH2)2}$
+\end_inset
+
+ (Harnstoff),
+ dass die Bindungen sämtlich kovalent sind.
+ Daher gibt es kein Gegenion und daher muss das Kohlenstoffatom in der Halbreaktion von Anfang an berücksichtigt und wie die Redoxatome ausgeglichen werden.
+ Sauerstoff und Stickstoff werden wie üblich mittel 
+\begin_inset Formula $\ce{H2O}$
+\end_inset
+
+ und 
+\begin_inset Formula $\ce{H+}$
+\end_inset
+
+ ausgeglichen.
+\end_layout
+
+\begin_layout Enumerate
+Stickstoff und Kohlenstoff sind schon ausgeglichen
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{CO(NH2)2 -> N2 + CO2 + 6e-}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{CO(NH2)2 + H2O -> N2 + CO2 + 6e-}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{CO(NH2)2 + H2O -> N2 + CO2 + 6H+ + 6e-}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Zweite Halbreaktion:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\ce{NO2- -> N2}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Die zweite Halbreaktion hat mit 
+\begin_inset Formula $\ce{N2}$
+\end_inset
+
+ das gleiche Produkt wie die erste Halbreaktion.
+ Das ist das Merkmal einer Komproportionierung.
+ Das war auch schon das Besondere an der Komproportionierung.
+ Der Rest wird wieder nach Schema abgearbeitet.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{2NO2- -> N2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{2NO2- + 6e- -> N2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{2NO2- + 6e- -> N2 + 4H2O}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{2NO2- + 8H+ +6e- -> N2 + 4H2O}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Die Elektronen sind in diesem Fall schon ausgeglichen,
+ sodass die Halbreaktionen direkt addiert werden können.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{CO(NH2)2 + H2O + 2NO2- + 8H+ + 6e- -> N2 + CO2 + 6H+ + 6e- + N2 + 4H2O}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{CO(NH2)2 + 2NO2- + 2H+ -> N2 + CO2 + N2 + 3H2O}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Nicht basisch.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{CO(NH2)2 + 2HNO2- -> N2 + CO2 + N2 + 3H2O}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Gebrochene Oxidationszahlen
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ce{Na2S2O3 + I2 -> Na2S4O6 + NaI}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Wenn man bei dieser Reaktion die Oxidationszahlen berechnet,
+ wie man es üblicherweise lernt,
+ erhält man für Schwefel in 
+\begin_inset Formula $\ce{Na2S4O6}$
+\end_inset
+
+ 2,5.
+ Auch wenn Oxidationszahlen nur fiktive Ladungen sind,
+ müssen sie trotzdem ganzzahlig sein.
+ Die Berechnungsmethode führt daher zu einem falschen Ergebnis.
+\end_layout
+
+\begin_layout Standard
+Das ist jedoch kein Problem,
+ da man nicht die Oxidationszahlen einzelner Atome für die Berechnung der Koeffizienten braucht.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{\overset{+1}{\ce{Na}}2\overset{+4}{\ce{S}}\overset{0}{\ce{S}}\overset{-2}{\ce{O}}3 + \overset{0}{\ce{I}}2 -> \overset{+1}{\ce{Na}}2\overset{+5}{\ce{S}}2\overset{0}{\ce{S}}2\overset{-2}{\ce{O}}6 + \overset{+1}{\ce{Na}}}\overset{-1}{\ce{I}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Erst Teilreaktion
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\ce{S2O3^{2-} -> S4O6^{2-}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{2S2O3^{2-} -> S4O6^{2-}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Da nur zwei der vier Schwefelatome ein Elektron abgeben,
+ sind es zwei Elektronen,
+ die übergehen.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\ce{2S2O3^{2-} -> S4O6^{2-} + 2e-}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Sauerstoff ist schon ausgeglichen.
+\end_layout
+
+\begin_layout Enumerate
+Wasserstoff ist schon ausgeglichen.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Zweite Teilreaktion
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\ce{I2 -> I-}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{I2 -> 2I-}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{I2 + 2e- -> 2I-}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Sauerstoff ist schon ausgeglichen.
+\end_layout
+
+\begin_layout Enumerate
+Wasserstoff ist schon ausgeglichen.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Die Elektronen sind in diesem Fall schon ausgeglichen,
+ sodass die Halbreaktionen direkt addiert werden können.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{2S2O3^{2-} + I2 + 2e- -> S4O6^{2-} + 2I- + 2e-}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{2S2O3^{2-} + I2 -> S4O6^{2-} + 2I-}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Die Reaktion läuft nicht im basischen Milieu ab,
+ daher wird dieser Schritt übersprungen
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ce{2Na2S2O3 + I2 -> Na2S4O6 + 2NaI}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Aufgaben
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{afg}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\ce{H2SO4 + HBr -> SO2 + Br2 + H2O}$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "afg:1"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{afg}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{afg}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\ce{H2SO4 + HI -> H2S + I2 + H2O}$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "afg:2"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{afg}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{afg}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\ce{S + HNO3 -> H2SO4 + NO}$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "afg:3"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{afg}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{afg}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\ce{FeCl3 +KI -> FeCl2 + I2}$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "afg:4"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{afg}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{afg}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\ce{Cr2O3 + HNO3 -> H2CrO4 + HNO2}$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "afg:5"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{afg}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{afg}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\ce{Cl2 + NaOH -> NaCl + NaClO}$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "afg:6"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{afg}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{afg}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\ce{KMnO4 + Ca(COO)2 + H2SO4 -> MnSO4 + K2SO4 + CaSO4 + CO2 + H2O}$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "afg:7"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{afg}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch Lösungen
+inverted 0
+status open
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+Lösungen:
+\end_layout
+
+\begin_layout Standard
+Aufg.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "afg:1"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+\begin_inset space \thickspace{}
+\end_inset
+
+
+\begin_inset Formula $\ce{H2SO4 + 2HBr -> SO2 + Br2 + 2H2O}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Aufg.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "afg:2"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+\begin_inset space \thickspace{}
+\end_inset
+
+
+\begin_inset Formula $\ce{H2SO4 + 8HI -> H2S + 4I2 + 4H2O}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Aufg.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "afg:3"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+\begin_inset space \thickspace{}
+\end_inset
+
+
+\begin_inset Formula $\ce{S + 2HNO3 -> H2SO4 + 2NO}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Aufg.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "afg:4"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+\begin_inset space \thickspace{}
+\end_inset
+
+
+\begin_inset Formula $\ce{2FeCl3 + 2KI -> 2FeCl2 + I2 + 2KI}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Aufg.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "afg:5"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+\begin_inset space \thickspace{}
+\end_inset
+
+
+\begin_inset Formula $\ce{Cr2O3 + 3HNO3 + H2O -> 2H2CrO4 + 3HNO2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Aufg.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "afg:6"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+\begin_inset space \thickspace{}
+\end_inset
+
+
+\begin_inset Formula $\ce{Cl2 + 2NaOH -> NaCl + NaClO + H2O}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Aufg.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "afg:7"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+:
+\begin_inset space \thickspace{}
+\end_inset
+
+
+\begin_inset Formula $\ce{2KMnO4 + 5Ca(COO)2 + 8H2SO4 -> 2MnSO4 + 10CO2 + 5CaSO2 + K2SO4 + 8H2O}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
